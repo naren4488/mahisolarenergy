@@ -1,49 +1,62 @@
 import Image from "next/image";
-import { Award, MapPin, Star, Users, Heart, LucideIcon } from "lucide-react";
+import { MaskedIcon } from "@/components/ui/masked-icon";
 
-const strengths = [
+interface StrengthItem {
+  icon: string;
+  iconColor: string;
+  title: string;
+  description: string;
+}
+
+const strengths: StrengthItem[] = [
   {
-    icon: Award,
+    icon: "/assets/icons/CertifiedExpertise.svg",
+    iconColor: "text-white",
     title: "Certified Expertise",
     description: "As a certified solar provider, we maintain high standards in every project.",
   },
   {
-    icon: MapPin,
+    icon: "/assets/icons/PanIndia.svg",
+    iconColor: "text-white",
     title: "Pan India Reach",
     description: "From Jaipur to every corner of India, we deliver consistent and timely service.",
   },
   {
-    icon: Star,
+    icon: "/assets/icons/QualityEquipment.svg",
+    iconColor: "text-white",
     title: "Quality Equipment",
     description: "We source premium solar panels, inverters, & accessories through trusted suppliers.",
   },
   {
-    icon: Users,
+    icon: "/assets/icons/ExperiencedTeam.svg",
+    iconColor: "text-white",
     title: "Experienced Team",
     description: "Our skilled installation and support teams ensure flawless project execution.",
   },
   {
-    icon: Heart,
+    icon: "/assets/icons/CustomerSatisfaction.svg",
+    iconColor: "text-white",
     title: "Customer Satisfaction",
     description: "We prioritize feedback and maintain strong relationships through quality and service.",
   },
 ];
 
 interface StrengthCardProps {
-  icon: LucideIcon;
+  icon: string;
+  iconColor: string;
   title: string;
   description: string;
   className?: string;
 }
 
-function StrengthCard({ icon: Icon, title, description, className }: StrengthCardProps) {
+function StrengthCard({ icon, iconColor, title, description, className }: StrengthCardProps) {
   return (
     <div className={`bg-white relative rounded-4xl p-6 shadow-lg hover:shadow-xl transition-shadow ${className || ""}`}>
-      <div className="">
+      <div>
         {/* Icon */}
         <div className="flex justify-center mb-4">
-          <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
-            <Icon className="w-8 h-8 text-white" />
+          <div className="w-28 h-28 rounded-full bg-primary flex items-center justify-center shadow-inner">
+            <MaskedIcon src={icon} className={`w-20 h-20 ${iconColor}`} />
           </div>
         </div>
 
@@ -90,6 +103,7 @@ export function OurStrengths() {
               <StrengthCard
                 key={index}
                 icon={strength.icon}
+                iconColor={strength.iconColor}
                 title={strength.title}
                 description={strength.description}
                 className="flex-1"
@@ -103,6 +117,7 @@ export function OurStrengths() {
               <StrengthCard
                 key={index + 3}
                 icon={strength.icon}
+                iconColor={strength.iconColor}
                 title={strength.title}
                 description={strength.description}
                 className="md:w-[calc(33.333%-1rem)]"

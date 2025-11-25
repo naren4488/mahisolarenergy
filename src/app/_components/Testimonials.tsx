@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { MaskedIcon } from "@/components/ui/masked-icon";
 
 const testimonials = [
   {
@@ -31,10 +31,7 @@ function TestimonialCard({ rating, review, clientType }: TestimonialCardProps) {
       {/* Star Rating */}
       <div className="flex gap-1 mb-4">
         {[...Array(5)].map((_, index) => (
-          <Star
-            key={index}
-            className={`w-5 h-5 ${index < rating ? "fill-white text-white" : "fill-none text-white/30"}`}
-          />
+          <MaskedIcon src="/assets/icons/Star.svg" className={`w-5 h-5 ${index < rating ? "text-white" : "text-white/30"}`} key={index} />
         ))}
       </div>
 

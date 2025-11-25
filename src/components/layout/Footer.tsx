@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Facebook, Linkedin, Instagram } from "lucide-react";
+import { MaskedIcon } from "@/components/ui/masked-icon";
+
 
 const companyLinks = [
   { href: "/about", label: "About Us" },
@@ -12,17 +13,17 @@ const socialLinks = [
   {
     name: "Facebook",
     href: "https://facebook.com",
-    icon: Facebook,
+    icon: "/assets/icons/facebook.svg",
   },
   {
     name: "LinkedIn",
     href: "https://linkedin.com",
-    icon: Linkedin,
+    icon: "/assets/icons/linkedIn.svg",
   },
   {
     name: "Instagram",
     href: "https://instagram.com",
-    icon: Instagram,
+    icon: "/assets/icons/instagram.svg",
   },
 ];
 
@@ -57,17 +58,16 @@ export function Footer() {
             </h3>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
-                const Icon = social.icon;
                 return (
                   <a
                     key={social.name}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-colors"
+                    className="w-10 h-10 rounded-full flex items-center justify-center"
                     aria-label={social.name}
                   >
-                    <Icon className="w-5 h-5 text-white" />
+                    <MaskedIcon src={social.icon} className="w-28 h-28 text-black" />
                   </a>
                 );
               })}

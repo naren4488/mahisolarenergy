@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Sun, Zap } from "lucide-react";
+import { MaskedIcon } from "@/components/ui/masked-icon";
 
 const services = [
   {
@@ -19,28 +19,25 @@ const services = [
   },
 ];
 
+const servicesIcon = "/assets/icons/ourservices.svg";
+
 export function OurServices() {
   return (
     <section className="bg-primary">
       <div className="flex flex-col md:flex-row">
         {/* Left Panel - Our Services Info */}
-        <div className="flex flex-col items-start text-white px-6 py-16 md:p-16 md:w-2/5">
-          {/* Icon */}
-          <div className="mb-6 flex items-center gap-3">
-            <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
-              <Sun className="w-8 h-8 text-white" />
-            </div>
-            <Zap className="w-6 h-6 text-white" />
+        <div className="flex flex-col items-start text-white px-6 py-16 md:p-16 md:w-2/5 gap-6">
+          <div className="w-24 h-24 mb-4">
+            <MaskedIcon src={servicesIcon} className="w-28 h-28 text-white" />
           </div>
 
-          {/* Title */}
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Our Services</h2>
-
-          {/* Description */}
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-            At Mahi Solar, we specialize in delivering tailored solar solutions that meet your specific energy needs.
-            Our two core services include:
-          </p>
+          <div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Our Services</h2>
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+              At Mahi Solar, we specialize in delivering tailored solar solutions that meet your specific energy
+              needs. Our two core services include:
+            </p>
+          </div>
         </div>
 
         {/* Right Panel - Service Cards */}
