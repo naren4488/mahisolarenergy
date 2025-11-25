@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mahi Solar Energy - Harness the Power of the Sun",
   description: "End-to-End Solar Solutions for Homes and Industries Across India",
+  icons: {
+    icon: "/assets/icons/LOGO.svg",
+  },
 };
 
 export default function RootLayout({
