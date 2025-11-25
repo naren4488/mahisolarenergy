@@ -35,7 +35,7 @@ export function Hero() {
           {/* CTA Button */}
           <a
             href="#catalogue"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-full hover:bg-primary-dark transition-colors shadow-lg hover:shadow-xl"
           >
             DOWNLOAD CATALOGUE
             <ArrowRight className="w-5 h-5" />

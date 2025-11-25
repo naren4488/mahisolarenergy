@@ -20,21 +20,17 @@ export function Navigation() {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex items-center bg-primary rounded-lg px-6 py-3 shadow-lg">
+      <nav className="hidden md:flex items-center bg-primary rounded-l-full px-6 py-3 shadow-lg">
         {navLinks.map((link, index) => (
           <Link
             key={link.href}
             href={link.href}
             className={`relative flex items-center gap-1 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10 rounded-md ${
-              pathname === link.href
-                ? "bg-white/10"
-                : ""
+              pathname === link.href ? "bg-white/10" : ""
             } ${index !== navLinks.length - 1 ? "mr-1" : ""}`}
           >
             {link.label}
-            {link.hasDropdown && (
-              <ChevronDown className="w-4 h-4" />
-            )}
+            {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
           </Link>
         ))}
       </nav>
@@ -45,11 +41,7 @@ export function Navigation() {
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         aria-label="Toggle menu"
       >
-        {isMobileMenuOpen ? (
-          <X className="w-6 h-6" />
-        ) : (
-          <Menu className="w-6 h-6" />
-        )}
+        {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
       {/* Mobile Navigation */}
@@ -66,9 +58,7 @@ export function Navigation() {
                 }`}
               >
                 {link.label}
-                {link.hasDropdown && (
-                  <ChevronDown className="w-4 h-4 ml-auto" />
-                )}
+                {link.hasDropdown && <ChevronDown className="w-4 h-4 ml-auto" />}
               </Link>
             ))}
           </div>
@@ -77,4 +67,3 @@ export function Navigation() {
     </>
   );
 }
-
