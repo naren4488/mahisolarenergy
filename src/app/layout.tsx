@@ -20,6 +20,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/assets/icons/LOGO.svg",
   },
+  openGraph: {
+    title: "Mahi Solar Energy - Harness the Power of the Sun",
+    description: "End-to-End Solar Solutions for Homes and Industries Across India.",
+    url: "https://mahisolarenergy.com",
+    siteName: "Mahi Solar Energy",
+    images: [
+      {
+        url: "/assets/icons/LOGO.svg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -29,13 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header />
-        <main>
-        {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
