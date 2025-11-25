@@ -83,7 +83,7 @@ export function OurStrengths() {
         </div>
 
         {/* Strength Cards */}
-        <div className="flex flex-col gap-8 max-w-6xl mx-auto">
+        <div className="flex flex-col gap-6 md:gap-8 max-w-6xl mx-auto">
           {/* First 3 Cards */}
           <div className="flex flex-col md:flex-row gap-6 md:gap-8">
             {strengths.slice(0, 3).map((strength, index) => (

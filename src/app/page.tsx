@@ -1,6 +1,7 @@
 import { Hero } from "./_components/Hero";
 import { WhyChooseUs } from "./_components/WhyChooseUs";
 import { OurStrengths } from "./_components/OurStrengths";
+import { OurServices } from "./_components/OurServices";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <OurStrengths />
+      <OurServices />
     </>
   );
 }
