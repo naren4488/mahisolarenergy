@@ -25,7 +25,7 @@ export function Navigation() {
           <Link
             key={link.href}
             href={link.href}
-            className={`relative flex items-center gap-1 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10 rounded-md ${
+            className={`relative flex items-center gap-1 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10 rounded-full ${
               pathname === link.href ? "bg-white/10" : ""
             } ${index !== navLinks.length - 1 ? "mr-1" : ""}`}
           >
