@@ -42,7 +42,7 @@ export function SiteSchedulePage() {
     if (meta)
       meta.setAttribute(
         "content",
-        "Daily team assignments: Dinesh team and Yogesh team — 28 March to 5 April.",
+        "Site schedule: Dinesh only 28–29 March; both teams from 30 March to 5 April 2026.",
       );
   }, []);
 
@@ -56,7 +56,7 @@ export function SiteSchedulePage() {
       <div className="container mx-auto max-w-6xl px-4 pt-28 pb-12">
         <h1 className="mb-2 text-3xl font-bold text-foreground md:text-4xl">Site schedule</h1>
         <p className="mb-8 text-muted-foreground">
-          Each day both teams are deployed — 28 March through 5 April 2026.
+          28–29 March: Dinesh team only. From 30 March: Dinesh and Yogesh teams — through 5 April 2026.
         </p>
 
         <div className="overflow-x-auto rounded-xl border border-border shadow-sm">
