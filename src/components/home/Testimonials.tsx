@@ -27,34 +27,33 @@ interface TestimonialCardProps {
 
 function TestimonialCard({ rating, review, clientType }: TestimonialCardProps) {
   return (
-    <div className="hover:bg-secondary rounded-lg p-6 border">
-      {/* Star Rating */}
-      <div className="flex gap-1 mb-4">
+    <div className="rounded-lg border p-6 hover:bg-secondary">
+      <div className="mb-4 flex gap-1">
         {[...Array(5)].map((_, index) => (
-          <MaskedIcon src="/assets/icons/Star.svg" className={`w-5 h-5 ${index < rating ? "text-white" : "text-white/30"}`} key={index} />
+          <MaskedIcon
+            src="/assets/icons/Star.svg"
+            className={`h-5 w-5 ${index < rating ? "text-white" : "text-white/30"}`}
+            key={index}
+          />
         ))}
       </div>
 
-      {/* Review Text */}
-      <p className="text-white text-base md:text-lg leading-relaxed mb-4">{review}</p>
+      <p className="mb-4 text-base leading-relaxed text-white md:text-lg">{review}</p>
 
-      {/* Client Type */}
-      <p className="text-white font-semibold text-sm md:text-base">{clientType}</p>
+      <p className="text-sm font-semibold text-white md:text-base">{clientType}</p>
     </div>
   );
 }
 
 export function Testimonials() {
   return (
-    <section className="py-16 md:py-24 bg-primary-dark">
+    <section className="bg-primary-dark py-16 md:py-24">
       <div className="container mx-auto px-4">
-        {/* Section Title */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">TESTIMONIALS</h2>
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl font-bold text-white md:text-5xl lg:text-6xl">TESTIMONIALS</h2>
         </div>
 
-        {/* Testimonial Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={index}

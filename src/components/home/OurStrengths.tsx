@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FillImage } from "@/components/ui/fill-image";
 import { MaskedIcon } from "@/components/ui/masked-icon";
 
 interface StrengthItem {
@@ -51,20 +51,19 @@ interface StrengthCardProps {
 
 function StrengthCard({ icon, iconColor, title, description, className }: StrengthCardProps) {
   return (
-    <div className={`bg-white relative rounded-4xl p-6 shadow-lg hover:shadow-xl transition-shadow ${className || ""}`}>
+    <div
+      className={`relative rounded-4xl bg-white p-6 shadow-lg transition-shadow hover:shadow-xl ${className || ""}`}
+    >
       <div>
-        {/* Icon */}
-        <div className="flex justify-center mb-4">
-          <div className="w-28 h-28 rounded-full bg-primary flex items-center justify-center shadow-inner">
-            <MaskedIcon src={icon} className={`w-20 h-20 ${iconColor}`} />
+        <div className="mb-4 flex justify-center">
+          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-primary shadow-inner">
+            <MaskedIcon src={icon} className={`h-20 w-20 ${iconColor}`} />
           </div>
         </div>
 
-        {/* Title */}
-        <h3 className="text-xl font-bold text-gray-900 text-center mb-3">{title}</h3>
+        <h3 className="mb-3 text-center text-xl font-bold text-gray-900">{title}</h3>
 
-        {/* Description */}
-        <p className="text-gray-700 text-center text-sm leading-relaxed">{description}</p>
+        <p className="text-center text-sm leading-relaxed text-gray-700">{description}</p>
       </div>
     </div>
   );
@@ -72,33 +71,25 @@ function StrengthCard({ icon, iconColor, title, description, className }: Streng
 
 export function OurStrengths() {
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
-      {/* Background Image */}
+    <section className="relative overflow-hidden py-16 md:py-24">
       <div className="absolute inset-0 z-0">
-        <Image
+        <FillImage
           src="/assets/images/hero2.png"
           alt="Solar panel facility background"
-          fill
           className="object-cover"
-          quality={90}
         />
-        {/* Dark overlay for better readability */}
         <div className="absolute inset-0 bg-primary/60" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
-        {/* Section Title */}
-        <div className="text-center mb-12">
-          <h2 className="inline-block px-6 py-3 bg-primary rounded-full text-white text-2xl md:text-3xl font-bold">
+        <div className="mb-12 text-center">
+          <h2 className="inline-block rounded-full bg-primary px-6 py-3 text-2xl font-bold text-white md:text-3xl">
             OUR STRENGTHS
           </h2>
         </div>
 
-        {/* Strength Cards */}
-        <div className="flex flex-col gap-6 md:gap-8 max-w-6xl mx-auto">
-          {/* First 3 Cards */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 md:gap-8">
+          <div className="flex flex-col gap-6 md:flex-row md:gap-8">
             {strengths.slice(0, 3).map((strength, index) => (
               <StrengthCard
                 key={index}
@@ -111,8 +102,7 @@ export function OurStrengths() {
             ))}
           </div>
 
-          {/* Last 2 Cards */}
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8 md:justify-center">
+          <div className="flex flex-col gap-6 md:flex-row md:justify-center md:gap-8">
             {strengths.slice(3, 5).map((strength, index) => (
               <StrengthCard
                 key={index + 3}

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
+import { FillImage } from "@/components/ui/fill-image";
 import { MaskedIcon } from "@/components/ui/masked-icon";
 
 const services = [
@@ -25,44 +25,38 @@ export function OurServices() {
   return (
     <section className="bg-primary">
       <div className="flex flex-col md:flex-row">
-        {/* Left Panel - Our Services Info */}
-        <div className="flex flex-col items-start text-white px-6 py-16 md:p-16 md:w-2/5 gap-6">
-          <div className="w-24 h-24 mb-4">
-            <MaskedIcon src={servicesIcon} className="w-28 h-28 text-white" />
+        <div className="flex flex-col items-start gap-6 px-6 py-16 text-white md:w-2/5 md:p-16">
+          <div className="mb-4 h-24 w-24">
+            <MaskedIcon src={servicesIcon} className="h-28 w-28 text-white" />
           </div>
 
           <div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Our Services</h2>
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+            <h2 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">Our Services</h2>
+            <p className="text-lg leading-relaxed text-white/90 md:text-xl">
               At Mahi Solar, we specialize in delivering tailored solar solutions that meet your specific energy
               needs. Our two core services include:
             </p>
           </div>
         </div>
 
-        {/* Right Panel - Service Cards */}
-        <div className="flex flex-col md:flex-row gap-12 bg-primary-dark p-6 md:p-16">
+        <div className="flex flex-col gap-12 bg-primary-dark p-6 md:flex-row md:p-16">
           {services.map((service, index) => (
             <Link
               key={index}
-              href={service.href}
-              className="group flex-1 block bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all"
+              to={service.href}
+              className="group block flex-1 overflow-hidden rounded-3xl bg-white shadow-lg transition-all hover:shadow-xl"
             >
-              {/* Image */}
-              <div className="relative w-full h-64 md:h-96 overflow-hidden rounded-3xl">
-                <Image
+              <div className="relative h-64 w-full overflow-hidden rounded-3xl md:h-96">
+                <FillImage
                   src={service.image}
                   alt={service.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  quality={90}
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
-              {/* Content */}
               <div className="p-6">
-                <h3 className="text-2xl md:text-3xl font-bold text-primary mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <h3 className="mb-3 text-2xl font-bold text-primary md:text-3xl">{service.title}</h3>
+                <p className="leading-relaxed text-gray-600">{service.description}</p>
               </div>
             </Link>
           ))}

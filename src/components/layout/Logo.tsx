@@ -1,22 +1,21 @@
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center group h-full">
-      <div className="flex items-center gap-0 px-4 py-2 h-full bg-white rounded-r-full shadow-sm group-hover:shadow-md transition-shadow">
-        <div className="relative w-10 h-10 shrink-0">
-          <Image
+    <Link to="/" className="group flex h-full items-center">
+      <div className="flex h-full items-center gap-0 rounded-r-full bg-white px-4 py-2 shadow-sm transition-shadow group-hover:shadow-md">
+        <div className="relative h-10 w-10 shrink-0">
+          <img
             src="/assets/icons/LOGO.svg"
             alt="Mahi Solar Energy Logo"
-            fill
-            className="w-full h-full"
-            priority
+            className="h-full w-full object-contain"
+            width={40}
+            height={40}
           />
         </div>
-        <p className="font-bold uppercase text-primary leading-none">
+        <p className="leading-none font-bold text-primary uppercase">
           MAHI SOLAR
-          <br/>
+          <br />
           ENERGY
         </p>
       </div>
