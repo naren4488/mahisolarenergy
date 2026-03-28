@@ -1,0 +1,155 @@
+[
+  {
+    "date": "2026-03-28",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "Ravi site",
+        "siteCapacityKw": 5,
+        "siteLocationAddress": "Hathoj"
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "Ravi site",
+        "siteCapacityKw": 5,
+        "siteLocationAddress": "Hathoj"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-29",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-03-30",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-03-31",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-04-01",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-04-02",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-04-03",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-04-04",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  },
+  {
+    "date": "2026-04-05",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      },
+      {
+        "teamName": "Yogesh team",
+        "siteName": "",
+        "siteCapacityKw": null,
+        "siteLocationAddress": ""
+      }
+    ]
+  }
+]

@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { RootLayout } from "@/layouts/RootLayout";
 import { HomePage } from "@/pages/HomePage";
 import { SimplePage } from "@/pages/SimplePage";
+import { SiteSchedulePage } from "@/pages/SiteSchedulePage";
 
 export function App() {
   return (
@@ -20,6 +21,7 @@ export function App() {
             }
           />
           <Route path="projects" element={<SimplePage title="Project gallery" />} />
+          <Route path="schedule" element={<SiteSchedulePage />} />
           <Route path="contact" element={<SimplePage title="Contact us" />} />
           <Route path="terms" element={<SimplePage title="Terms and conditions" />} />
           <Route path="privacy" element={<SimplePage title="Privacy policy" />} />
