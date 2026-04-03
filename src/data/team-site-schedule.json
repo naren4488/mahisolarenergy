@@ -179,5 +179,63 @@
         ]
       }
     ]
+  },
+  {
+    "date": "2026-04-10",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "tasks": [
+          {
+            "siteName": "",
+            "siteCapacityKw": null,
+            "siteLocationAddress": "",
+            "workNote": "",
+            "isLocked": false
+          }
+        ]
+      },
+      {
+        "teamName": "Yogesh team",
+        "tasks": [
+          {
+            "siteName": "",
+            "siteCapacityKw": null,
+            "siteLocationAddress": "",
+            "workNote": "",
+            "isLocked": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-04-11",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "tasks": [
+          {
+            "siteName": "",
+            "siteCapacityKw": null,
+            "siteLocationAddress": "",
+            "workNote": "",
+            "isLocked": false
+          }
+        ]
+      },
+      {
+        "teamName": "Yogesh team",
+        "tasks": [
+          {
+            "siteName": "",
+            "siteCapacityKw": null,
+            "siteLocationAddress": "",
+            "workNote": "",
+            "isLocked": false
+          }
+        ]
+      }
+    ]
   }
 ]
