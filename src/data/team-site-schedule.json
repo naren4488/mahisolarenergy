@@ -1,125 +1,37 @@
 [
   {
-    "date": "2026-03-28",
-    "teams": [
-      {
-        "teamName": "Dinesh team",
-        "siteName": "Ravi site",
-        "siteCapacityKw": 5,
-        "siteLocationAddress": "Hathoj"
-      }
-    ]
-  },
-  {
-    "date": "2026-03-29",
-    "teams": [
-      {
-        "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      }
-    ]
-  },
-  {
-    "date": "2026-03-30",
-    "teams": [
-      {
-        "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      },
-      {
-        "teamName": "Yogesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      }
-    ]
-  },
-  {
-    "date": "2026-03-31",
-    "teams": [
-      {
-        "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      },
-      {
-        "teamName": "Yogesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      }
-    ]
-  },
-  {
-    "date": "2026-04-01",
-    "teams": [
-      {
-        "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      },
-      {
-        "teamName": "Yogesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      }
-    ]
-  },
-  {
-    "date": "2026-04-02",
-    "teams": [
-      {
-        "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      },
-      {
-        "teamName": "Yogesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      }
-    ]
-  },
-  {
-    "date": "2026-04-03",
-    "teams": [
-      {
-        "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      },
-      {
-        "teamName": "Yogesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
-      }
-    ]
-  },
-  {
     "date": "2026-04-04",
     "teams": [
       {
         "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
+        "tasks": [
+          {
+            "siteName": "Sindhi",
+            "siteCapacityKw": 100,
+            "siteLocationAddress": "Sarna Dungar",
+            "workNote": "Pipeline work",
+            "isLocked": true
+          }
+        ]
       },
       {
         "teamName": "Yogesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
+        "tasks": [
+          {
+            "siteName": "Deepak",
+            "siteCapacityKw": 15,
+            "siteLocationAddress": "Kardhani, Jaipur",
+            "workNote": "Structure",
+            "isLocked": true
+          },
+          {
+            "siteName": "Sitaram",
+            "siteCapacityKw": 3,
+            "siteLocationAddress": "Bhenslana",
+            "workNote": "Structure prepare",
+            "isLocked": true
+          }
+        ]
       }
     ]
   },
@@ -128,15 +40,143 @@
     "teams": [
       {
         "teamName": "Dinesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
+        "tasks": [
+          {
+            "siteName": "Sindhi",
+            "siteCapacityKw": 100,
+            "siteLocationAddress": "Sarna Dungar",
+            "workNote": "Wiring work",
+            "isLocked": true
+          }
+        ]
       },
       {
         "teamName": "Yogesh team",
-        "siteName": "",
-        "siteCapacityKw": null,
-        "siteLocationAddress": ""
+        "tasks": [
+          {
+            "siteName": "Sitaram",
+            "siteCapacityKw": 3,
+            "siteLocationAddress": "Bhenslana",
+            "workNote": "Complete install",
+            "isLocked": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-04-06",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "tasks": [
+          {
+            "siteName": "Sindhi",
+            "siteCapacityKw": 100,
+            "siteLocationAddress": "Sarna Dungar",
+            "workNote": "Earthing",
+            "isLocked": true
+          }
+        ]
+      },
+      {
+        "teamName": "Yogesh team",
+        "tasks": [
+          {
+            "siteName": "Dakhli Devi",
+            "siteCapacityKw": 6,
+            "siteLocationAddress": "Govindpura",
+            "workNote": "Panel, inverter, wiring, etc. work",
+            "isLocked": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-04-07",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "tasks": [
+          {
+            "siteName": "Sindhi",
+            "siteCapacityKw": 100,
+            "siteLocationAddress": "Sarna Dungar",
+            "workNote": "Inverter",
+            "isLocked": true
+          }
+        ]
+      },
+      {
+        "teamName": "Yogesh team",
+        "tasks": [
+          {
+            "siteName": "Satendra",
+            "siteCapacityKw": 10,
+            "siteLocationAddress": "Dadi ka Fatak",
+            "workNote": "3kW panels, inverter, wiring, etc. work",
+            "isLocked": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-04-08",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "tasks": [
+          {
+            "siteName": "Sindhi",
+            "siteCapacityKw": 100,
+            "siteLocationAddress": "Sarna Dungar",
+            "workNote": "AC / DC terminations & checks",
+            "isLocked": true
+          }
+        ]
+      },
+      {
+        "teamName": "Yogesh team",
+        "tasks": [
+          {
+            "siteName": "Mayank",
+            "siteCapacityKw": 8,
+            "siteLocationAddress": "Gandhi Path",
+            "workNote": "Panel, inverter, wiring, etc. work",
+            "isLocked": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-04-09",
+    "teams": [
+      {
+        "teamName": "Dinesh team",
+        "tasks": [
+          {
+            "siteName": "Sindhi",
+            "siteCapacityKw": 100,
+            "siteLocationAddress": "Sarna Dungar",
+            "workNote": "",
+            "isLocked": true
+          }
+        ]
+      },
+      {
+        "teamName": "Yogesh team",
+        "tasks": [
+          {
+            "siteName": "",
+            "siteCapacityKw": null,
+            "siteLocationAddress": "",
+            "workNote": "",
+            "isLocked": false
+          }
+        ]
       }
     ]
   }
