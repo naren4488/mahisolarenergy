@@ -57,14 +57,30 @@ function flattenSchedule(sortedDays: DaySchedule[]): FlatRow[] {
   });
 }
 
-function formatDate(iso: string) {
+function formatScheduleDateParts(iso: string) {
   const d = new Date(iso + "T12:00:00");
-  return new Intl.DateTimeFormat("en-IN", {
-    weekday: "short",
+  const calendarLine = new Intl.DateTimeFormat("en-IN", {
     day: "numeric",
     month: "short",
     year: "numeric",
   }).format(d);
+  const weekday = new Intl.DateTimeFormat("en-IN", {
+    weekday: "long",
+  }).format(d);
+  return { calendarLine, weekday };
+}
+
+function ScheduleDateCellContent({ iso }: { iso: string }) {
+  const { calendarLine, weekday } = formatScheduleDateParts(iso);
+  return (
+    <time
+      dateTime={iso}
+      className="flex flex-col gap-0.5 leading-tight not-italic"
+    >
+      <span className="font-medium whitespace-nowrap">{calendarLine}</span>
+      <span className="text-sm font-normal whitespace-nowrap text-muted-foreground">{weekday}</span>
+    </time>
+  );
 }
 
 function formatKw(kw: number | null) {
@@ -166,10 +182,10 @@ export function SiteSchedulePage() {
                         rowSpan={dayRowCount}
                         className={cn(
                           dateColumnBgClass(dayIndex),
-                          "border-y-0 border-l-0 border-t border-border border-r-2 border-r-border/60 align-top px-4 py-3 font-medium whitespace-nowrap text-foreground",
+                          "border-y-0 border-l-0 border-t border-border border-r-2 border-r-border/60 align-top px-4 py-3 text-foreground",
                         )}
                       >
-                        {formatDate(day.date)}
+                        <ScheduleDateCellContent iso={day.date} />
                       </td>
                     ) : null}
                     {taskIndexInTeam === 0 ? (
